@@ -1,0 +1,635 @@
+:root {
+  /* Font Family  */
+  --font-family: "Poppins", sans-serif;
+  --logo-font-family: "Volkhov", serif;
+
+  /* Colors  */
+  --gray-text: #8b888899;
+  --light-shade-gray: #efefef;
+  --dark-shade-gray: #e4e4e4;
+  --yellow: #ffe26d;
+  --purple: #61497b;
+  --dark-purple: #3d2a52;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ___________________________________________ Home ___________________________________________  */
+#home {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.img4 {
+  background: url("../img/home-carousel/groupx-p.jpg");
+}
+
+
+.home-carousel-img {
+  min-height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -999;
+}
+
+.home {
+  width: 60%;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10rem;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  flex-basis: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #fff;
+  font-family: var(--logo-font-family);
+  letter-spacing: 2px;
+}
+
+.navlinks {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+#toogle {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-logo-text {
+  cursor: pointer;
+}
+
+.navlink:hover {
+  transform: translateY(-3px);
+}
+
+.home-content {
+  min-height: 35vh;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.home-head-text {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  line-height: 3.5rem;
+}
+
+.home-sub-text {
+  opacity: 0.75;
+  word-spacing: 2px;
+  width: 75%;
+  font-size: 1.1rem;
+}
+
+.home-btn {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  min-height: 2.5rem;
+  width: 7rem;
+  color: #000;
+  background-color: var(--yellow);
+  transition: 0.3s ease-in-out;
+}
+
+.home-btn:hover {
+  background-color: var(--purple);
+  color: #fff;
+}
+
+/* ___________________________________________ Welcome ___________________________________________  */
+#welcome {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  min-height: 95vh;
+  width: 60%;
+  padding: 3rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* row-gap: 2rem; */
+  border-bottom: 1px solid #000;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  cursor: default;
+  color: var(--dark-purple);
+}
+
+.welcome-brief {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  color: var(--gray-text);
+  font-weight: 500;
+  cursor: default;
+}
+
+.wb-text {
+  flex-basis: 60%;
+}
+.wb-img {
+  flex-basis: 20%;
+}
+
+.welcome-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wc {
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-basis: 25%;
+}
+
+.wc-icon {
+  min-height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 35%;
+}
+
+.wc-head {
+  color: var(--purple);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.wc-text {
+  color: var(--gray-text);
+  font-size: 0.8rem;
+  cursor: default;
+}
+
+.lm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 2.5rem;
+  width: 7.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+  background-color: var(--purple);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.lm:hover {
+  background-color: var(--yellow);
+  color: var(--purple);
+}
+
+/* ___________________________________________ facilities ___________________________________________  */
+#facilities {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.facilities {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.facilities-text {
+  font-size: 1.5rem;
+  color: var(--dark-purple);
+}
+
+.facilities-card {
+  width: 23vw;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s ease-in-out;
+}
+
+.pc-light {
+  background-color: var(--light-shade-gray);
+}
+.pc-dark {
+  background-color: var(--dark-shade-gray);
+}
+
+.facilities-image {
+  width: 100%;
+  height: 25rem;
+}
+
+.facilities-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.facilities-desc {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  transition: 0.2s ease-in-out;
+}
+.facilities-desc h3 {
+  font-size: 1rem;
+  color: var(--purple);
+}
+.facilities-desc p {
+  font-size: 0.8rem;
+  color: var(--dark-purple);
+}
+
+
+.facilities-card:hover {
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+.facilities-card:hover p {
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/* ___________________________________________ pricing ___________________________________________  */
+#pricing {
+  min-height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing {
+  min-height: fit-content;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.pricing-head {
+  width: 100%;
+  text-align: center;
+  color: var(--dark-purple);
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+.pricing-table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pt {
+  min-height: 30vh;
+  width: 17vw;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.pt-head {
+  color: var(--dark-purple);
+  cursor: default;
+}
+
+.pt-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3rem;
+  cursor: default;
+}
+
+.pt-text {
+  font-size: 0.7rem;
+}
+
+.pt-price {
+  color: #0000004d;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.7rem 0;
+}
+
+.pt-btn {
+  padding: 1.5rem 0;
+}
+
+.pt-1 {
+  border-right: 2px solid var(--dark-shade-gray);
+}
+.pt-3 {
+  border-left: 2px solid var(--dark-shade-gray);
+}
+.pt-buy-btn {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 5.5rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.pt-buy-btn:hover {
+  background-color: var(--purple);
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/* ___________________________________________ Newsletter  ___________________________________________  */
+#newsletter {
+  min-height: 50vh;
+  width: 100vw;
+  background: url("/img/bg/newsletter-bg.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter {
+  min-height: 13vh;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news-head {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+.news-mail {
+  display: flex;
+}
+
+#email-input {
+  min-height: 2.3rem;
+  width: 23rem;
+  border: none;
+  border-radius: 2px;
+  padding: 0 1rem;
+}
+.news-signup-btn {
+  text-decoration: none;
+  min-height: 2.3rem;
+  width: 7rem;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow);
+  color: #000;
+  transition: 0.2s ease-in-out;
+}
+
+.news-signup-btn:hover {
+  background-color: var(--purple);
+  color: #fff;
+}
+
+/* ___________________________________________ Contact  ___________________________________________  */
+#contact {
+  min-height: 650.6px;
+  width: 100vw;
+  display: flex;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  background-color: var(--yellow);
+  justify-content: space-between;
+}
+.contact-cont {
+  padding: 3rem;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.contact-head {
+  font-size: 1.5rem;
+  color: var(--dark-purple);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.cf {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cf label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--dark-purple);
+}
+
+.cf input {
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.1rem;
+}
+
+.cf textarea,
+.cf button {
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.1rem;
+}
+
+.cf button {
+  min-height: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: var(--purple);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cf button:hover {
+  background-color: var(--light-shade-gray);
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  font-weight: 600;
+}
+
+/* ___________________________________________ Footer  ___________________________________________  */
+#footer {
+  min-height: 30vh;
+  width: 100vw;
+  background-color: var(--light-shade-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1rem;
+  cursor: default;
+}
+
+.fo-fol-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+  padding-top: 0.3rem;
+}
+
+.fo-add-content p,
+.fo-p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.fo-add-content a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fo-con-content a:hover,
+.fo-add-content a:hover {
+  color: var(--purple);
+}
+
+.fo-row-1,
+.fo-row-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fo-row-1 a,
+.fo-row-2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.fab {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.fab:hover {
+  color: var(--purple);
+}
+
+.fo-con-content a {
+  text-decoration: none;
+  color: #000;
+}
+
